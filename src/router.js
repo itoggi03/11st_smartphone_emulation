@@ -1,14 +1,20 @@
 // template
 const homeTemplate = require("../pages/home.hbs");
-const aboutTemplate = require("../pages/about.hbs");
+const alarmTemplate = require("../pages/alarm.hbs");
+const memoTemplate = require("../pages/memo.hbs");
+const photoTemplate = require("../pages/photo.hbs");
 
 const Home = homeTemplate();
-const About = aboutTemplate();
+const Alarm = alarmTemplate();
+const Memo = memoTemplate();
+const Photo = photoTemplate();
 
 const routes = {
   "/": Home,
   "/home": Home,
-  "/about": About,
+  "/alarm": Alarm,
+  "/memo": Memo,
+  "/photo": Photo,
 };
 
 // entry point

@@ -1,0 +1,41 @@
+.memo-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.memo-input-section {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+}
+
+.memo-input {
+  width: 90%;
+  height: 32px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0 16px;
+}
+
+.memo-input-hidden {
+  visibility: hidden;
+}
+
+.items {
+  height: 100%;
+  list-style: none;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.item__row {
+  margin: 16px 0;
+}
+
+.item__divider {
+  width: 100%;
+  height: 1px;
+  background-color: lightgray;
+  margin: 8px 0;
+}

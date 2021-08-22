@@ -1,6 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  width: 50vw;
+  margin: 0;
+  background-color: black;
+}
+
+button {
+  border-style: none;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: large;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+}
+
+button:hover {
+  opacity: 70%;
+}
+
+.container {
+  width: 35vw;
+  height: 100vh;
   margin: auto;
+  padding: 24px;
   background: linear-gradient(
     to right,
     #3a7bd5,
@@ -8,54 +33,33 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-hr {
-  margin-top: 50px;
-}
-
-span {
-  cursor: pointer;
-  color: blue;
-  text-decoration: underline;
-}
-
-span:hover {
-  color: #6a00ff;
-}
-
-.link-container {
-  text-align: center;
-}
-
-.link-box {
-  padding: 20px 0px 20px 0px;
-  display: inline-block;
-  width: 170px;
-  height: 50px;
-  text-align: center;
-}
-
-/* .page {
-  width: 50%;
-  margin: 0 auto;
-  height: 30vh;
-  border: 1px solid #4b4b4b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 .nav-bar {
   text-align: center;
   color: white;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
+.app-container {
   display: flex;
+  margin: 30px;
 }
 
 .app {
   width: 100px;
   height: 100px;
   background-color: aliceblue;
-  margin: 10px;
+  margin: 15px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: large;
+}
+
+.app:hover {
+  opacity: 70%;
 }
