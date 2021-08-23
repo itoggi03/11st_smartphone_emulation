@@ -14,6 +14,7 @@ module.exports = {
   output: {
     path: resolve(__dirname, "./dist"),
     filename: "[name].js",
+    // publicPath: "/",
   },
 
   plugins: [
@@ -36,6 +37,15 @@ module.exports = {
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        type: "asset/resource", 
+        // use: [
+        //   {
+        //     loader: "file-loader",
+        //   },
+        // ],
       },
     ],
   },
