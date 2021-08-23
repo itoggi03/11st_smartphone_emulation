@@ -1,11 +1,13 @@
 // js
 const onMemo = require("../src/memo.js");
 const onPhoto = require("../src/photo.js");
+const onAlarm = require("../src/alarm.js");
 
 // css
 require("../css/style.css");
 require("../css/memo-style.css");
 require("../css/photo-style.css");
+require("../css/alarm-style.css");
 
 // router
 const { initialRoutes, hashRouterPush } = require("./router");
@@ -46,4 +48,5 @@ setInterval(currentTime, 1000);
 window.addEventListener("hashchange", () => {
   location.hash == "#memo" && onMemo.onMemo();
   location.hash == "#photo" && onPhoto.onPhoto();
+  location.hash == "#alarm" && onAlarm.onAlarm();
 });
