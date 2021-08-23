@@ -43,7 +43,7 @@ function setTime() {
     hour = 12;
   } else if (Number(hour) > 12) {
     am = false;
-    hour = hour - 12;
+    hour = "0" + (hour - 12);
   }
 
   const result =
@@ -51,19 +51,21 @@ function setTime() {
   return result;
 }
 
+// localStorage에 있는 알람 목록 가져와서 보여주기
 function getAlarm() {
   Object.keys(localStorage).forEach((alarmId) => {
     const ul = document.querySelector(".alarms");
     if (alarmId.slice(0, 5) == "alarm") {
       const currId = Number(alarmId.slice(-1));
       const item = createItem(localStorage.getItem(`alarm${currId}`), alarmId);
-      
+
       id = currId > id ? currId + 1 : id;
       ul.appendChild(item);
     }
   });
 }
 
+// 알람 목록 아이템(li) 만드는 함수
 function createItem(time, alarmId) {
   const li = document.createElement("li");
   li.setAttribute("class", "alarms__row");
@@ -72,6 +74,7 @@ function createItem(time, alarmId) {
   return li;
 }
 
+// 삭제 버튼 눌렀을 경우
 function onClickDelete() {
   const items = document.querySelector(".alarms");
 
