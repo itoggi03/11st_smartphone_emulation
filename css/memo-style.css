@@ -31,6 +31,10 @@
 
 .item__row {
   margin: 16px 0;
+  background-color: aliceblue;
+  border-radius: 8px;
+  padding: 1px 2px;
+  cursor: context-menu;
 }
 
 .item__divider {
@@ -38,4 +42,15 @@
   height: 1px;
   background-color: lightgray;
   margin: 8px 0;
+}
+
+.item {
+  background-color: transparent;
+  margin: 8px;
+}
+
+.item-overflow {
+  overflow: hidden;
+  line-height: 1.2;
+  height: 2.4em;
 }
