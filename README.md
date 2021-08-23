@@ -6,6 +6,8 @@
 
 # 실행방법
 
+아래 명령어 실행 후, `ctrl`(or `cmd`) 누른 상태에서 `localhost 링크` 클릭
+
 ```shell
 $ npm install
 $ npm run start
