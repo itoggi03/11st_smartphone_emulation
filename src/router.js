@@ -49,6 +49,5 @@ function renderHTML(el, route) {
 
 module.exports = {
   initialRoutes,
-  // historyRouterPush,
   hashRouterPush,
 };
