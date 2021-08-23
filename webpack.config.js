@@ -14,6 +14,7 @@ module.exports = {
   output: {
     path: resolve(__dirname, "./dist"),
     filename: "[name].js",
+    // publicPath: "/",
   },
 
   plugins: [
@@ -39,11 +40,12 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif)$/i,
-        use: [
-          {
-            loader: "file-loader",
-          },
-        ],
+        type: "asset/resource", 
+        // use: [
+        //   {
+        //     loader: "file-loader",
+        //   },
+        // ],
       },
     ],
   },

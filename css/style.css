@@ -64,3 +64,8 @@ button:hover {
 .app:hover {
   opacity: 70%;
 }
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+}

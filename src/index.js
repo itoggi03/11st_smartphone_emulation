@@ -1,9 +1,11 @@
 // js
 const onMemo = require("../src/memo.js");
+const onPhoto = require("../src/photo.js");
 
 // css
 require("../css/style.css");
 require("../css/memo-style.css");
+require("../css/photo-style.css");
 
 // router
 const { initialRoutes, hashRouterPush } = require("./router");
@@ -43,5 +45,5 @@ setInterval(currentTime, 1000);
 // hash가 변경될 떄마다 실행
 window.addEventListener("hashchange", () => {
   location.hash == "#memo" && onMemo.onMemo();
-  location.hash == "#photo" && onPhoto();
+  location.hash == "#photo" && onPhoto.onPhoto();
 });
